@@ -27,8 +27,10 @@
     _resolveFilename: function(request, parent) {
       var path = expand(dirname(parent), request);
       if (_definedModules.hasOwnProperty(path)) return path;
-      path = expand(path, './index');
-      if (_definedModules.hasOwnProperty(path)) return path;
+      var pathJs = path + '.js';
+      if (_definedModules.hasOwnProperty(pathJs)) return pathJs;
+      var pathIndexJs = expand(path, './index.js');
+      if (_definedModules.hasOwnProperty(pathIndexJs)) return pathIndexJs;
       return request;
     }
   };
