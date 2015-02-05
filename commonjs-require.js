@@ -3,7 +3,7 @@
   'use strict';
 
   var globals = typeof window === 'undefined' ? global : window;
-  if (typeof globals.require === 'function') return;
+  //if (typeof globals.require === 'function') return;
 
   var _definedModules = {};
   var _aliases = {};
