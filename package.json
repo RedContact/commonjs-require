@@ -1,6 +1,6 @@
 {
   "name": "commonjs-require",
-  "version": "1.4.6",
+  "version": "1.4.6-1",
   "description": "browser-side CommonJS require() function.",
   "main": "node.js",
   "repository": {
